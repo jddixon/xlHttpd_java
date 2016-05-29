@@ -13,9 +13,9 @@ LCP=.:$JAVA_HOME/lib/tools.jar:$LCP
 # path, which will become CLASSPATH if the second argument is 'set'.
 # unless there is a 'quiet' argument, the local class path is echoed.
 if [ "$1" = "build" ] ; then 
-    LCP=../lib/junit/junit-4.1.jar:$LCP
+    LCP=../xlattice_java/lib/junit/junit-4.1.jar:$LCP
     #LCP=`echo ../lib/ant/*.jar | tr ' ' ':'`:$LCP
-    LCP=../lib/ant/ant-1.5.4.jar:../lib/ant/optional-1.5.4.jar:$LCP
+    LCP=../xlattice_java/lib/ant/ant-1.5.4.jar:../xlattice_java/lib/ant/optional-1.5.4.jar:$LCP
     if [ "$2" = "set" ] ; then
         CLASSPATH=$LCP
         if [ ! "$3" = "quiet" ] ; then
