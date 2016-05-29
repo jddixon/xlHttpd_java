@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="test" name="httpd" basedir=".">
+<project default="test" name="xlHttpd_java" basedir=".">
   <property name="name"           value="httpd"/>
-  <property name="version"        value="0.2.4"/>
-  <property name="versionDate"    value="2015-12-20"/>
+  <property name="version"        value="0.2.5"/>
+  <property name="version_date"   value="2016-05-28"/>
   <!-- manual addition -->
   <property name="project_name"    value="xlattice"/>
   <!-- ======================================================= -->
   <!-- S O U R C E   P R O P E R T I E S                       -->
   <!-- ======================================================= -->
   <!-- this is an XLattice subproject, so root_dir is one up   -->
-  <property name="root_dir"       value=".."/>
+  <property name="root_dir"       value="../xlattice_java"/>
   <property name="bin_dir"        value="bin"/>
   <property name="src_dir"        value="src/java"/>
   <property name="test_src_dir"   value="src/test"/>
@@ -20,7 +20,7 @@
   <!-- ======================================================= -->
   <property name="build_dir" value="target"/>
   <property name="classes_dir"      value="${build_dir}/classes"/>
-  <property name="lib_dir"          value="../lib"/>
+  <property name="lib_dir"          value="${root_dir}/lib"/>
   <property name="test_classes_dir" value="${build_dir}/test-classes"/>
   <property name="test_report_dir"  value="${build_dir}/test-reports"/>
   <property name="javadoc_dir"
@@ -197,6 +197,7 @@
   <!-- ======================================================= -->
   <target name="dist"   description="o Create a full distribution"
                                                 depends="javadoc">
+    <mkdir  dir="${xdoc_dir}"/>
     <mkdir  dir="${zip_dir}"/>
     <delete dir="${dist_dir}"/>
     <mkdir  dir="${dist_dir}/${component}"/>
@@ -259,4 +260,5 @@
     <delete dir="${dist_dir}"/>
   </target>
 </project>
+
 

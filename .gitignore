@@ -1,0 +1,17 @@
+*.bak
+*.log
+*.swp
+*ZZZ
+.committed
+.merkle
+.posted
+.sharedev
+.svn
+.wrapped
+.xlattice
+CVS
+build
+dist-files
+distribution
+junk*
+target
