@@ -8,6 +8,7 @@ then
     -d ../xlHttpd_java \
     -1L  \
     -u $DVCZ_UDIR \
+    -X compost.heap \
     -X .ssh \
     $@
   
