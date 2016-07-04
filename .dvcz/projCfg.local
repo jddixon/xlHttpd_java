@@ -1,5 +1,4 @@
 # xlHttpd_java/.dvcz/projCfg.local
-#
+
 dir:clr:xlattice/overlays/store
 bin:priv:compost.heap
-
