@@ -1,5 +1,8 @@
 ~/dev/java/xlattice_j/httpd/CHANGES
 
+v0.2.7
+    2016-09-28
+        * correct license                                           SLOC 8769
 v0.2.6
     2016-07-03
         * add ghpDoc/{css,img}                                      SLOC 5941
@@ -25,6 +28,7 @@ v0.2.3
     2011-08-21 
         * stepped version number for move to Stockton svn
         * dropped build.sh, classpath.sh, added CHANGES
+
 
 
 
