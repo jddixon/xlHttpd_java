@@ -1,4 +1,6 @@
 # xlHttpd_java/.dvcz/projCfg.local
 
+txt:std:LICENSE-XLATTICE.md
+
 dir:clr:xlattice/overlays/store
 bin:priv:compost.heap
